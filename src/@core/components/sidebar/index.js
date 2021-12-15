@@ -28,8 +28,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div>
-      <div className="w-64 h-screen bg-white ">
+      <div className="w-64 h-screen bg-white fixed top-0 left-0 bottom-0 z-10 ">
         <div className="px-4 pt-4">
           <div className="relative text-black-base mb-2 ">
             <div
@@ -62,7 +61,6 @@ const Sidebar = () => {
           </ul>
         </div>
       </div>
-    </div>
   );
 };
 

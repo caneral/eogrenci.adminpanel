@@ -1,11 +1,22 @@
 import  React,{ lazy } from "react";
-import Sidebar from "../../@core/components/sidebar";
+import Department from "../../pages/department/Department";
+import Homepage from "../../pages/Homepage";
+import Lesson from "../../pages/lesson/Lesson";
 
 const PagesRoutes = [
     {
         path: '/',
-        element: <Sidebar/>,
+        element: <Homepage/>,
     },
+    {
+        path: 'departments',
+        element: <Department/>
+    },
+    {
+        path: 'lessons',
+        element: <Lesson/>
+    }
+    
     
 ]
 

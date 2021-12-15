@@ -9,15 +9,15 @@ export const Pages = [
         icon: <MdSpaceDashboard size={20}/>
     },
     {
-        id:'dersler',
+        id:'lesson',
         title: 'Dersler',
-        path:'/about',
+        path:'/lessons',
         icon: <FiFileText size={20}/>
     },
     {
-        id:'bolumler',
+        id:'departments',
         title: 'Bölümler',
-        path:'/about',
+        path:'/departments',
         icon: <IoIosSchool size={20}/>
     }
 ];
