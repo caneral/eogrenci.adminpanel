@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { BsPersonFill } from "react-icons/bs";
 import { Link, useLocation } from "react-router-dom";
 import exportedObject from "../../../navigation/vertical";
-import { BsPersonFill } from "react-icons/bs";
 
 const Sidebar = () => {
   const location = useLocation();
@@ -28,7 +28,7 @@ const Sidebar = () => {
   };
 
   return (
-      <div className="w-64 h-screen bg-white fixed top-0 left-0 bottom-0 z-10 ">
+      <div className="w-64 h-screen inset-y-0 bg-white fixed z-10 transform -translate-x-full lg:translate-x-0 transition duration-400 ease-in">
         <div className="px-4 pt-4">
           <div className="relative text-black-base mb-2 ">
             <div

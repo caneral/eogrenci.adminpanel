@@ -7,7 +7,7 @@ const VerticalLayout = () => {
   return (
     <div>
       <Sidebar />
-      <main className="ml-64 h-screen px-6 py-5 space-y-6">
+      <main className="lg:ml-64 h-screen px-6 py-5 space-y-6">
           <Navbar />
           <Outlet />
       </main>
