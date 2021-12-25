@@ -20,7 +20,12 @@ module.exports = {
       },
       fontSize: {
         'cr': '1.1rem' 
+      },
+      boxShadow: {
+              
+        'all': '0px 4px 24px 0 rgba(34, 41, 47, 0.1)'
       }
+
     },
   },
   plugins: [],

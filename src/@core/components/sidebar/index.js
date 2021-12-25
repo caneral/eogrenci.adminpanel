@@ -41,7 +41,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`w-64 h-screen inset-y-0 bg-white fixed z-10 transform  lg:translate-x-0 ${
+      className={`w-64 shadow-lg h-screen inset-y-0 bg-white fixed z-10 transform  lg:translate-x-0 ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } transition duration-400 ease-in`}
     >
@@ -55,7 +55,7 @@ const Sidebar = () => {
             <BsPersonFill size={20} />
           </div>
 
-          <div className="pl-3 pr-4 py-2 w-full inline-block rounded font-sans text-xl font-bold text-purple-base">
+          <div className="pl-3 pr-4 py-1 w-full inline-block rounded font-sans text-xl font-bold text-purple-base">
             E-Ogrenci
           </div>
         </Link>
