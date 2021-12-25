@@ -47,7 +47,7 @@ const Sidebar = () => {
     >
       <div className="flex text-black-base mb-4 pt-4 items-center">
         <Link
-          className="flex text-black-base  items-center opa"
+          className="flex text-black-base  items-center px-4"
           to={"/"}
           onClick={() => dispatch(setOpen(!isOpen))}
         >
