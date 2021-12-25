@@ -7,7 +7,7 @@ const Navbar = () => {
     const dispatch = useDispatch();
     const isOpen = useSelector( state => state.sidebar.isOpen )
   return (
-    <div className="lg:w-full md:w-full sm:w-2/3 bg-white rounded-md h-16 flex items-center">
+    <div className="bg-white rounded-md h-16 flex items-center">
       <div className="flex justify-between py-3 px-4 w-full">
         <div className="flex space-x-3 items-center">
           <button className="lg:hidden" onClick={() => dispatch(setOpen(!isOpen))}>

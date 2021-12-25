@@ -19,5 +19,109 @@ export const Pages = [
         title: 'Bölümler',
         path:'/departments',
         icon: <IoIosSchool size={20}/>
+    },{
+        id:'department',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'department',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },
+    {
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },
+    {
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },
+    {
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },
+    {
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
+    },{
+        id:'departments',
+        title: 'Bölümler',
+        path:'/department',
+        icon: <IoIosSchool size={20}/>
     }
 ];

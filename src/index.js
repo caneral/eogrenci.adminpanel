@@ -7,6 +7,8 @@ import store from "./store/index";
 
 //css
 import './index.css';
+import 'simplebar/dist/simplebar.min.css';
+
 
 ReactDOM.render(
   <Provider store={store}>
