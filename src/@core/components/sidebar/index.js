@@ -67,7 +67,7 @@ const Sidebar = () => {
           <IoCloseSharp size={20} />
         </button>
       </div>
-      <SimpleBar className="h-screen px-4 pb-4">
+      <SimpleBar className="h-screen px-4 py-4">
         <ul>
           {pages.map((item, index) => {
             return (
