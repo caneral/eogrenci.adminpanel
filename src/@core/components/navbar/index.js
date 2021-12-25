@@ -2,6 +2,7 @@ import React from "react";
 import { CgMenu } from "react-icons/cg";
 import { useDispatch, useSelector } from "react-redux";
 import { setOpen } from "../../../features/sidebarSlice";
+import UserProfile from "./UserProfile";
 
 const Navbar = () => {
     const dispatch = useDispatch();
@@ -13,9 +14,9 @@ const Navbar = () => {
           <button className="lg:hidden" onClick={() => dispatch(setOpen(!isOpen))}>
             <CgMenu size={20} />
           </button>
-          <div>Notifications</div>
+          <div></div>
         </div>
-        <div>User Profile</div>
+        <UserProfile />
       </div>
     </div>
   );
