@@ -1,9 +1,11 @@
 import React from 'react'
+import Table from './Table'
 
 const Department = () => {
     return (
-         <div className=' bg-white rounded-md h-96 py-3 px-4 shadow-all'>
-             Department
+         <div className=' bg-white rounded-md h-96 py-3 shadow-all'>
+             
+             <Table/>
          </div>
         
     )
