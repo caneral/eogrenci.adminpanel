@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BsPersonFill } from "react-icons/bs";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";

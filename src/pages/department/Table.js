@@ -1,26 +1,12 @@
-import React from "react";
-import DataTable from "react-data-table-component";
+import React, { useState } from "react";
 import DataTableBase from "../../components/DataTableBase";
-import Input from "../../components/Input";
-
+import AddDepartment from "./AddDepartment";
+import columns from "./columns";
 const Table = () => {
-  const ExpandedComponent = ({ data }) => (
-    <pre>{JSON.stringify(data, null, 2)}</pre>
-  );
+  const [modal, setModal] = useState(false);
 
-  const columns = [
-    {
-      name: "Bölüm Adı",
-      selector: (row) => row.department,
-      sortable: true,
-    },
-    {
-      name: "Year",
-      selector: (row) => row.year,
-      sortable: true,
-    },
-  ];
-
+  //Toggle for Modal
+  const toggle = () => setModal(!modal);
   const data = [
     {
       id: 1,
@@ -39,9 +25,9 @@ const Table = () => {
         <div className="grid grid-cols-2">
           <div className="flex  items-center p-0 ">
             <div className="flex items-center w-full">
-              <div class="relative inline-block w-20 text-gray-700 mr-2">
+              <div className="relative inline-block w-20 text-gray-700 mr-2">
                 <select
-                  class="w-20 h-10 px-4  text-sm placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline "
+                  className="w-20 h-10 px-4  text-sm placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline "
                   placeholder="Regular input"
                 >
                   <option>10</option>
@@ -50,12 +36,12 @@ const Table = () => {
                   <option>40</option>
                   <option>50</option>
                 </select>
-                <div class="absolute inset-y-0 right-3 text-gray-300 flex items-center px-2 pointer-events-none">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                <div className="absolute inset-y-0 right-3 text-gray-300 flex items-center px-2 pointer-events-none">
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
                     <path
                       d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                      fill-rule="evenodd"
+                      clipRule="evenodd"
+                      fillRule="evenodd"
                     ></path>
                   </svg>
                 </div>
@@ -68,7 +54,15 @@ const Table = () => {
               </label>
             </div>
           </div>
-          <div>2</div>
+          <div className="flex justify-end">
+            <button
+              className="bg-purple-base rounded-md px-4 text-white"
+              onClick={() => setModal(!modal)}
+            >
+              Bölüm Ekle
+            </button>
+          </div>
+          <AddDepartment isOpen={modal} toggle={toggle} />
         </div>
       </div>
     );
