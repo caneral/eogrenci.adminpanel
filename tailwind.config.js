@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         gray: {
           base: '#f8f8f8',
+          hover: '#7367f01f'
         },
         black: {
           base: '#625f6e'

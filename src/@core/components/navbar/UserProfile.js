@@ -6,15 +6,13 @@ import Dropdown, {
   DropdownToggle,
 } from "../../../components/Dropdown";
 import useComponentVisible from "../../constants/useComponentVisible";
+import { FiUser } from "react-icons/fi"
+import { AiOutlinePoweroff } from "react-icons/ai"
+
 
 const UserProfile = () => {
-    const [dropdownOpen, setDropdownOpen] = useState(false)
-
-   
 
     const { ref,refToggle , isComponentVisible, toggle } = useComponentVisible(false);
-
-   
 
   return (
       <Dropdown >
@@ -28,19 +26,23 @@ const UserProfile = () => {
                 admin
               </p>
             </div>
-            <div>
+            <div className="relative">
               <img
                 className="w-10 h-10 rounded-full"
                 src={pp}
                 alt="profile_picture"
               />
+              <span className="bg-green-500 w-3 h-3 absolute rounded-lg  bottom-0 right-0 border-white border-2"/>
+
             </div>
           </button>
         </DropdownToggle>
         <DropdownMenu isOpen={isComponentVisible} menuRef={ref}>
-          <DropdownItem>Profile</DropdownItem>
-          <DropdownItem>Inbox</DropdownItem>
-          <DropdownItem>Task</DropdownItem>
+        <DropdownItem icon={<FiUser/>} title="Profil" />
+        <DropdownItem icon={<AiOutlinePoweroff/>} title="Çıkış Yap" />
+              
+            
+          
         </DropdownMenu>
       </Dropdown>
   );
