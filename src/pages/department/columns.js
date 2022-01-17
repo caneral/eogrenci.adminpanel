@@ -1,12 +1,12 @@
  const columns = [
     {
-      name: "Bölüm Adı",
-      selector: (row) => row.department,
+      name: "Id",
+      selector: (row) => row.id,
       sortable: true,
     },
     {
-      name: "Year",
-      selector: (row) => row.year,
+      name: "Bölüm Adı",
+      selector: (row) => row.departmentName,
       sortable: true,
     },
   ];

@@ -15,7 +15,6 @@ const AddDepartment = ({ isOpen, toggle }) => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => console.log(data);
-  console.log("useForm ->",watch("department"));
 
   return (
     <div>

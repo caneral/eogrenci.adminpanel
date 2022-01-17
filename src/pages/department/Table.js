@@ -1,24 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import DataTableBase from "../../components/DataTableBase";
 import AddDepartment from "./AddDepartment";
 import columns from "./columns";
+import { getAllData } from "../../features/departmentSlice";
+
 const Table = () => {
   const [modal, setModal] = useState(false);
 
   //Toggle for Modal
   const toggle = () => setModal(!modal);
-  const data = [
-    {
-      id: 1,
-      department: "Bilişim Sistemleri Mühendisliği",
-      year: "1988",
-    },
-    {
-      id: 2,
-      department: "Bilgisayar Mühendisliği",
-      year: "1984",
-    },
-  ];
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getAllData())
+  },[dispatch])
+  
+  const department = useSelector((state) => state.department);
   const CustomHeader = () => {
     return (
       <div className="w-full mt-2 mb-75 ">
@@ -71,7 +68,7 @@ const Table = () => {
     <div>
       <DataTableBase
         columns={columns}
-        data={data}
+        data={department.data}
         subHeader
         subHeaderComponent={<CustomHeader />}
       />

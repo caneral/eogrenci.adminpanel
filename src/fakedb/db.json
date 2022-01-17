@@ -1,0 +1,8 @@
+{
+    "departments": [
+        {"id":1, "departmentName":"Bilişim Sistemleri Mühendisliği"},
+        {"id":2, "departmentName":"Makine Mühendisliği"},
+        {"id":3, "departmentName":"Endüstri Mühendisliği"},
+        {"id":4, "departmentName":"Elektrik - Elektronik Mühendisliği"}
+    ]
+}
